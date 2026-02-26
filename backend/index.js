@@ -3,8 +3,8 @@ dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-import authRoutes from './src/routes/authRoutes.js';
-import doctorRoutes from './src/routes/doctorRoutes.js';
+import authRoutes from './routes/authRoutes.js'
+import doctorRoutes from './routes/doctorRoutes.js';
 
 const app = express();
 
