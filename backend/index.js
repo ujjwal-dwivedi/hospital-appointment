@@ -9,7 +9,11 @@ import doctorRoutes from './routes/doctorRoutes.js';
 const app = express();
 
 app.use(cors({
-  origin: '*'
+  origin: [
+    'http://localhost:5173',
+    'https://hospital-appointment-six-xi.vercel.app'
+  ],
+  credentials: true
 }));
 app.use(express.json());
 
